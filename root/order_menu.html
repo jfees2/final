@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elemental Pies Order</title>
+    <!----CSS----->
+     <link rel="stylesheet" href="css/order_menu.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <!---BOOTSTRAP--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/order_menu.js"></script>
+    
+</head>
+<body>
+   <main>
+       <!-----NAV MENU & LOGO LINK----->
+      <nav>
+           <!--logo heres-->
+           <div id="nav-bar" class="row">
+               <div class="col-4 centered" id="nav-title"><img src="img/logo_white.png" alt="logo"></div>
+               <ul class="col-8">
+                   <li><a class="home" href="index.html">home</a></li>
+                   <li><a class="menu" href="menu.html">menu</a></li>
+                   <li><a class="location" href="#">locations</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <!----CONTAINER---->
+       <div class="row">
+       <div class="container col-7 justify-content-start"> 
+           <ul class="tabs row">
+               <li class="tab-link current col" data-tab="tab4">CRAFT YOUR OWN</li>
+               <li class="tab-link col" data-tab="tab3">CRAFTED</li>
+               <li class="tab-link col" data-tab="tab1">SALADS</li>
+               <li class="tab-link col" data-tab="tab6">DRINKS</li>
+           </ul>
+           <form id="order-form" action="payment.html">
+               <!---SALADS---->
+               <div id="tab1" class="tab-content">
+                   <h1>Hand Tossed Greens</h1>
+                   <div class="items">
+                    <input type="checkbox" name="Kumquat Kale Salad" value="Kumquat Kale Salad">
+                    <label>Kumquat Kale Salad</label>
+                    <input type="checkbox" name="Cobb Salad" value="Cobb Salad"><label>Cobb Salad</label>
+                    <input type="checkbox" name="Classic Cesar Salad" value="Classic Cesar Salad"><label>Classic Cesar Salad</label>
+                   <input type="checkbox" name="Roasted Beet" value="Roasted Beet"><label>Roasted Beet</label>
+                   <input type="checkbox" name="Rainbow Bell Pepper Power Greens" value="Rainbow Bell Pepper Power Greens"><label>Rainbow Bell Pepper Power Greens</label></div>
+               </div>
+
+               <!---CRAFTED--->
+               <div id="tab3" class="tab-content">
+                <h1>Crafted Pies</h1>
+                   <h3>Don't think about it, we made these just for you.</h3>
+                <h4 class="row col">Choose Your Size</h4>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" name="pie-size" id="small" value="small">
+                    <label class="form-check-label" for="full">Small</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" name="pie-size" id="medium" value="medium">
+                    <label class="form-check-label" for="half">Medium</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" name="pie-size" id="large" value="large">
+                    <label class="form-check-label" for="Quater">Large</label>
+                </div>
+                <div class="form-check form-check-inline col-2">
+                    <input class="form-check-input" type="radio" name="pie-size" id="xlarge" value="xlarge">
+                    <label class="form-check-label" for="half">Extra Large</label>
+                </div>
+                   <label class="row col"><h4>Choose Your Pie</h4></label> 
+                <div class="items">
+                    <input type="checkbox" name="Mellow Mushroom" value="Mellow Mushroom">
+                    <label>Mellow Mushroom</label>
+                    <input type="checkbox" name="Great White" value="Great White"><label>Great White</label>
+                    <input type="checkbox" name="Kosmic Karma" value="Kosmic Karma"><label>Kosmic Karma</label>
+                   <input type="checkbox" name="Holy Shiitake" value="Holy Shiitake"><label>Holy Shiitake</label>
+                   <input type="checkbox" name="Blazin Q" value="Blazin Q"><label>Blazin Q</label></div>
+
+
+
+               </div>
+
+
+               <!----CRAFT YOUR OWN---->
+               <div id="tab4" class="tab-content current">
+
+                <h1>Craft Your Own</h1>
+                   <h4>All Vegan Ingredients</h4>
+                <label class="row col"><h4>Start With Base</h4></label> 
+                    <select class="row col-sm-3" name="dough" id="dough">
+                       <option selected disbaled value="">Dough..</option>
+                       <option value="Classic">Classic</option>
+                       <option value="Whole Wheat">Whole Wheat</option>
+                       <option value="Garlic and Herb">Garlic and Herb</option>
+                       <option value="Gluten Free">Gluten Free</option>
+                    </select>
+                   <h4 class="row col">Choose Your Size</h4>   
+                       <select disabled class="row col-sm-3" name="size" id="pie-sizes">
+                           <option value="0" selected>Please Select a Dough First</option>
+
+                       </select>
+                <label class="row col"><h4>Get Lost in the Sauce</h4></label> 
+                    <select disabled class="row col-sm-3" name="sauce" id="sauce">
+                       <option value="0">Classic - no charge</option>
+                       <option value="0">Spicy - no charge</option>
+                       <option value=".99">Pesto + $.99</option>
+                       <option value="1">Alfredo + $1.00</option>
+                        <option value="1.50">White Basil + $1.50</option>
+                    </select>
+                <label class="row col"><h4>No Dairy, No Problem</h4></label> 
+                    <select disabled class="row col-sm-3" name="cheese" id="cheese">
+                       <option value="0">Mozzarella (default) - no charge</option>
+                       <option value="0">Parmesan - no charge</option>
+                       <option value="2.99">Gorgonzola + $2.99</option>
+                        <option value="3.99">Mediterranean Feta + $3.99</option>
+                    </select>
+                   <label class="row col"><h4>Top it Off</h4></label>
+                   <div class="items">
+                   <input disabled type="checkbox" name="soy chorizo" value="soy chorizo"><label>soy chorizo</label>
+                   <input disabled type="checkbox" name="vegan sausage" value="vegan sausage"><label>vegan sausage</label>
+                   <input disabled type="checkbox" name="jalapenos" value="jalapenos"><label>jalapenos</label>
+                   <input disabled type="checkbox" name="mushrooms" value="mushrooms"><label>mushrooms</label>
+                   <input disabled type="checkbox" name="pineapple" value="pineapple"><label>pineapple</label>
+                   <input disabled type="checkbox" name="onion" value="onion"><label>onion</label>
+                   <input disabled type="checkbox" name="green peppers" value="green peppers"><label>green peppers</label>
+                   <input disabled type="checkbox" name="olives" value="olives"><label>olives</label>
+                   <input disabled type="checkbox" name="spinach" value="spinach"><label>spinach</label>
+                   <input disabled type="checkbox" name="basil" value="basil"><label>basil</label>
+                   </div>
+               </div>
+
+                <!----DRINK---->
+               <div id="tab6" class="tab-content"></div>
+           </form>
+           
+       </div>
+       
+               <!------YOUR CRAFT DIV----->
+        <div class="your-order col-4">
+            <div id="your-order-header">
+           <h1> Your Order</h1>
+            </div>
+           <h5 class="cart" id="pizza-name"></h5>
+           <h5 class="cart" id="extra"></h5>
+           <h5 class="cart" id="toppings"></h5>
+            <h3 class="cart">$<span id="total">0.00</span></h3>
+            <hr>
+            <h4 class="cart" id="store-info"></h4>
+            <a style="display:none;" id="checkout-bttn" class="button" href="#">CHECKOUT</a>
+       </div>  
+        </div>
+       
+       <!-----PAYMENT FORM------->
+       <div class="col-75" id="payment-form-container" style="display:none;">
+    <div class="container">
+      <form>
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label class="row col-sm-6">
+          <input type="checkbox" checked="checked" name="sameAddress" id="sameAddress" > Same as Delivery Address
+        </label>
+            <label for="adr" class="row col-sm-6">Address:</label>
+            <input type="text" id="inputAddress" name="inputAddress" placeholder="542 W. 15th Street">
+            <label class="row col-sm-6" for="city">City:</label>
+            <input type="text" id="inputCity" name="inputCity" placeholder="San Diego">
+
+            <div class="row">
+              <div class="col-50">
+                <label class="row col-sm-5" for="state">State:</label>
+                <input type="text" id="inputState" name="inputState" placeholder="CA">
+              </div>
+              <div class="col-50">
+                <label class="row col-sm-6" for="zip">Zip:</label>
+                <input type="text" id="inputZip" name="inputZip" placeholder="90000">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label class="row col-sm-6" for="cname">Name on Card:</label>
+            <input type="text" id="inputName" name="inputName" placeholder="Name">
+            <label class="row col-sm-6" for="ccnum">Credit Card Number:</label><p class="error" id="inputCardNum-error"></p>
+            <input type="text" id="inputCardNum" name="inputCardNum" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <div class="row">
+            <div class="col-25">
+            <label class="row" for="expmonth">Exp Month:</label>
+            <select id="inputExpMonth" name="inputExpMonth" class="form-control">
+                        <option value="0" selected disabled>Month</option>
+                        <option value="01">JAN</option>
+                        <option value="02">FEB</option>
+                        <option value="03">MAR</option>
+                        <option value="04">APR</option>
+                        <option value="05">MAY</option>
+                        <option value="06">JUN</option>
+                        <option value="07">JUL</option>
+                        <option value="08">AUG</option>
+                        <option value="09">SEPT</option>
+                        <option value="10">OCT</option>
+                        <option value="11">NOV</option>
+                        <option value="12">DEC</option>
+                    </select>
+                </div>
+              <div class="col-25">
+                <label class="row" for="expyear">Exp Year:</label>
+                <select id="inputExpYear" name="inputExpYear" class="form-control">
+                        <option value="0" selected disabled>Year</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                    </select>
+              </div>
+              <div class="col-25">
+                <label class="row" for="cvv">CVV:</label>
+                <input type="text" id="inputCVV" name="inputCVV" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+          <a href="#" id="payment-bttn" class="button">Submit Your Order</a>
+      </form>
+    </div>
+  </div>
+       
+        <!------FOOTER--------> 
+   <footer id="foot-menu">
+       <div class="row foot centered">
+           <ul class="col">
+               <li><a href="locations.html">LOCATIONS</a></li>
+               <li><a href="#">VEGAN LIFE</a></li>
+               <li><a href="#">MEET THE MAKERS</a></li>
+           </ul>
+           <ul class="col">
+               <li><a href="order_menu.html">ORDER NOW</a></li>
+               <li><a href="#">CATERING</a></li>
+               <li><a href="#">GIFT CARDS</a></li>
+           </ul>
+       </div>
+   </footer>
+       
+   </main>
+    <footer></footer>
+</body>
+</html>

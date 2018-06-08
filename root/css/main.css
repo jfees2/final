@@ -1,0 +1,325 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/******FONTS AND SIZING********/
+
+/*******HEADER AND NAV BAR******/
+
+header {
+    min-width: 100%;
+    min-height: 100%;
+    background: url(../img/header_bkgd_pizza.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.centered {
+    text-align: center;
+}
+
+#title {
+    margin-top: 50%;
+    margin-left: 25%;
+    color: black;
+    position: absolute;
+}
+
+#title h1 {
+    font-size: 6em;
+    color: #004d00;
+    font-family: "League Gothic";
+    font-weight: bold;
+}
+
+#title h3 {
+    font-size: 2em;
+    color: #004d00;
+    font-family: "League Gothic";
+}
+
+
+/******FOOTER******/
+#foot-index {
+    bottom: 0;
+    top: 120%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #5C8459;
+    color: #FFF;
+    font-family: "League Gothic";
+    letter-spacing: 3px;
+    font-size: 1em;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.foot img {
+    height: 50px;
+    width: 60px
+}
+
+#logo-foot li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.foot ul {
+    list-style-type: none;
+}
+
+.foot ul li {
+    padding-bottom: 15px;
+}
+
+.foot ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.foot ul li a:hover {
+    color: black;
+}
+
+/******SOCIAL MEDIA*****/
+.media-icons {
+    float: right;
+    margin-right: 20px;
+}
+
+.media-icons img {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+
+/******CONTAINER******/
+#container {
+    position: relative;
+    top: 100%;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*****ORDER ONLINE OPTIONS******/
+#order-online {
+    height: 500px;
+    background: url(../img/bkgd_order_index.png) no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+#order-title {
+    padding-top: 120px;
+    margin-bottom: -15px;
+}
+
+#order-title h1 {
+    font-size: 4em;
+    font-family: "League Gothic Condensed";
+    letter-spacing: .08em;
+}
+
+.order-sub-title h2 {
+    font-size: 2em;
+    font-family: "League Gothic";
+}
+
+.order-icons {
+    padding-bottom: 15px;
+}
+
+.pop-up {
+     font-family: "League Gothic Condensed";
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    left: 35%;
+    top:0%;
+    padding: 20px;
+    border: 1px solid #B7B7B7;
+    border-radius: 15px;
+    background-color: #5C8459;;
+    box-shadow: inset 2px -2px 5px #B7B7B7, inset -2px 2px 10px #B7B7B7;
+    z-index: 100;
+}
+
+.location-form {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 400px;
+    height: 280px;
+    border: 1px solid #B7B7B7;
+    border-radius: 15px;
+    background-color: #5C8459;
+    box-shadow: inset 2px -2px 5px #B7B7B7, inset -2px 2px 10px #B7B7B7;
+    z-index: 100;
+}
+
+.location-form h4 {
+    padding-top: 10px;
+    margin-left: 12px;
+    text-align: center;
+    font-family: "League Gothic";
+    font-size: 2em;
+    letter-spacing: .2em;
+}
+
+#stores {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+}
+
+#stores label {
+    padding-bottom: 10px;
+    font-family: "League Gothic";
+    font-size: 1.2em;
+    letter-spacing: .2em;
+}
+
+#close, #close2 {
+    float: right;
+    display: inline-block;
+    padding: 10px 20px 10px 0;
+    cursor: pointer;
+}
+
+#close {
+    padding: 0 !important;
+    margin-top: -10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #FFF;
+    opacity: .5;
+}
+
+/******VEGAN VALUES******/
+#about {
+    margin: 80px 0 30px 0;
+    height:500px;
+    background: url(../img/bkgd_values_index.png) no-repeat;
+    background-size: cover;
+    color: #000;
+}
+
+#about h1 {
+    font-size: 4em;
+    font-family: "League Gothic Condensed";
+    letter-spacing: .08em;
+    margin-top: 50px
+}
+
+#about h2 {
+    font-size: 2em;
+    font-family: "League Gothic Condensed";
+    letter-spacing: .08em;
+    line-height: .2;
+    margin-bottom: 40px;
+}
+
+.val-text {
+    width: 50%;
+    display:inline-block;
+    font-family: "League Gothic";
+    font-size: 1.2em;
+}
+
+
+/******LINKS*******/
+#links {
+    height: 500px;
+    background: url(../img/bkgd_links_index.png) no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+#links h1 {
+    margin-top: 60px;
+     font-size: 3em;
+    font-family: "League Gothic Condensed";
+}
+
+.link-box {
+    margin-top: 30px;
+    height: 240px;
+    border-right: dashed 1px;
+    font-family: "League Gothic";
+    font-size: 1em;
+}
+
+#gift-cards-links {
+    border-right: none !important;
+}
+
+.link-box img {
+    padding-bottom: 20px;
+}
+
+/******BUTTONS******/
+.button {
+    height: 44px;
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, .80);
+    color: #5C8459;
+    font-family: "League Gothic Condensed";
+    font-size: 1em;
+}
+
+#locate-send-bttn, #send-bttn {
+ padding-top: 10px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+

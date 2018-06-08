@@ -1,0 +1,37 @@
+
+.centered {
+    text-align: center;
+}
+
+#nav-bar {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(92, 132, 89, .8);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    font-family: "League Gothic";
+    letter-spacing: 3px;
+    font-size: 1em;
+}
+
+#nav-title img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    color: #FFF;
+    padding-right: 55px;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,144 @@
+body {
+    margin-top: 100px;
+    line-height: 1.6;
+}
+.container {
+    margin-top: 100px;
+    height: 100%;
+    text-align: center;
+}
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px 5px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current {
+    background-color: rgba(92,132,89,.2);
+    color: #5C8459;
+}
+
+.tab-content {
+    height: auto;
+    display: none;
+    background-color: rgba(92,132,89,.1);
+    padding: 15px;
+    border-top: 2px black solid;
+}
+
+.tab-content.current{
+    display: inherit;
+    
+}
+.items {
+    display: block;
+    white-space: nowrap;
+    width: 140px;
+    margin-left: 25px;
+}
+.items label {
+    display: block;
+    margin-left: 25px;
+    margin-top: -20px;
+    padding-bottom: 10px
+}
+
+input[type=checkbox] {
+    display: block;
+}
+
+
+/*----CRAFT YOUR OWN PIZZA----*/
+
+
+#dough, #sauce, #cheese, #pie-sizes {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/*-----Your pizza div------*/
+.your-order {
+    width: 400px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 20px;
+    position: absolute
+    float: left;
+}
+
+#your-order-header {
+    height: 65px;
+    border-radius: 10px;
+    background-color: rgba(92,132,89,.2);
+    padding: 10px;
+}
+
+#store-info {
+    color: rgb(92,132,89);
+}
+
+
+/**********footer*******/
+
+#foot-menu {
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    background-color: #5C8459;
+    color: #FFF;
+    font-family: "League Gothic";
+    letter-spacing: 3px;
+    font-size: 1em;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.foot ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.foot ul li {
+    padding-bottom: 15px;
+}
+
+.foot ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.foot ul li a:hover {
+    color: black;
+}
+
+/******BUTTONS******/
+#payment-bttn, #checkout-bttn {
+    height: 44px;
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(92,132,89,.2);
+    color: #5C8459;
+    font-family: "League Gothic Condensed";
+    letter-spacing: .25em;
+}
+
+
+
